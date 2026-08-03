@@ -1,4 +1,4 @@
-<style>
+
     :root {
       --primary-color: #d4af37; /* Dorado */
       --secondary-color: #8e24aa; /* Violeta elegante */
@@ -65,12 +65,14 @@
     @media (min-width: 768px) {
       .website-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Mitad y mitad */
+        grid-template-columns: 1fr 1fr;
         text-align: left;
       }
       
       .left-column {
-        background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%);
+        /* Reemplazá 'URL_DE_TU_IMAGEN_DE_FONDO.jpg' por el enlace o ruta de tu imagen */
+        background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
+        url('https://picsum.photos/800/1200?random=20') center/cover no-repeat;
         padding: 50px 40px;
         display: flex;
         flex-direction: column;
@@ -83,19 +85,21 @@
       .right-column {
         padding: 40px;
         overflow-y: auto;
-        max-height: 85vh; /* Scroll interno si es necesario en PC */
+        max-height: 85vh;
         text-align: left;
       }
     }
 
-    /* Vista Mobile (Por defecto o pantallas chicas) */
+    /* Vista Mobile (Celulares) */
     @media (max-width: 767px) {
       body {
         padding: 10px;
       }
       .left-column {
         padding: 40px 20px;
-        background: linear-gradient(180deg, #fce4ec 0%, #ffffff 100%);
+        /* Fondo con imagen también en celular */
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+        url('https://picsum.photos/800/1200?random=20') center/cover no-repeat;
       }
       .right-column {
         padding: 20px;
@@ -131,7 +135,6 @@
       color: var(--text-muted);
       font-size: 0.95rem;
       line-height: 1.5;
-      margin-top: 15px;
     }
 
     /* Secciones de la Columna Derecha */
@@ -300,4 +303,23 @@
       margin: 15px 0;
       user-select: all;
     }
-</style>
+
+    /* Imagen de Perfil / Portada en Columna Izquierda */
+    .profile-img-container {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%; /* La hace redonda. Cambiá a 15px si la querés rectangular con bordes suaves */
+      border: 3px solid var(--primary-color);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
