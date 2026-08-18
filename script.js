@@ -67,7 +67,7 @@
     }
 
     /* 4. Confeti y Confirmación por WhatsApp */
-    function confirmAssistance() {
+    function confirmAssistance1() {
       confetti({
         particleCount: 100,
         spread: 70,
@@ -75,7 +75,21 @@
       });           
 
       setTimeout(() => {
-        const phone = "5491154783151"; // Reemplazar por tu número real
+        const phone = "1168233905"; // Reemplazar por tu número real
+        const text = encodeURIComponent("¡Hola! Quiero confirmar mi asistencia a los 15 de Abril ✨");
+        window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+      }, 1000);
+    }
+
+    function confirmAssistance2() {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });           
+
+      setTimeout(() => {
+        const phone = "1126688330"; // Reemplazar por tu número real
         const text = encodeURIComponent("¡Hola! Quiero confirmar mi asistencia a los 15 de Abril ✨");
         window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
       }, 1000);
