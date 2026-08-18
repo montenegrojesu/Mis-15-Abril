@@ -72,7 +72,7 @@
       .left-column {
         /* Reemplazá 'URL_DE_TU_IMAGEN_DE_FONDO.jpg' por el enlace o ruta de tu imagen */
         background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
-        url('https://picsum.photos/800/1200?random=20') center/cover no-repeat;
+        url('img/_MG_3603.png') center/cover no-repeat;
         padding: 50px 40px;
         display: flex;
         flex-direction: column;
@@ -99,7 +99,7 @@
         padding: 40px 20px;
         /* Fondo con imagen también en celular */
         background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
-        url('https://picsum.photos/800/1200?random=20') center/cover no-repeat;
+        url('img/_MG_3603.png') center/cover no-repeat;
       }
       .right-column {
         padding: 20px;
@@ -206,7 +206,7 @@
 
     .gallery-slide img {
       width: 100%;
-      height: 200px;
+      height: 360px;
       object-fit: cover;
       border-radius: 12px;
       flex-shrink: 0;
