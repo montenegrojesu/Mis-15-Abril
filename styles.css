@@ -72,7 +72,7 @@
       .left-column {
         /* Reemplazá 'URL_DE_TU_IMAGEN_DE_FONDO.jpg' por el enlace o ruta de tu imagen */
         background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
-        url('img/_MG_3603.png') center/cover no-repeat;
+        url('https://github.com/montenegrojesu/Mis-15-Abril/blob/main/img/_MG_3603.png?raw=true') center/cover no-repeat;
         padding: 50px 40px;
         display: flex;
         flex-direction: column;
