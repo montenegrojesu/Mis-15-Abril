@@ -75,7 +75,7 @@
       });           
 
       setTimeout(() => {
-        const phone = "1168233905"; // Reemplazar por tu número real
+        const phone = "5491168233905"; // Reemplazar por tu número real
         const text = encodeURIComponent("¡Hola! Quiero confirmar mi asistencia a los 15 de Abril ✨");
         window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
       }, 1000);
@@ -89,7 +89,7 @@
       });           
 
       setTimeout(() => {
-        const phone = "1126688330"; // Reemplazar por tu número real
+        const phone = "5491126688330"; // Reemplazar por tu número real
         const text = encodeURIComponent("¡Hola! Quiero confirmar mi asistencia a los 15 de Abril ✨");
         window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
       }, 1000);
